@@ -11,6 +11,7 @@ pipeline{
         environment{
 	    Docker_tag = getDockerTag()
         }
+	
         
         stages{
 
