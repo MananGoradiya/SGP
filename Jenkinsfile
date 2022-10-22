@@ -13,6 +13,7 @@ pipeline{
 	    Docker_tag = getDockerTag()
         }
 	
+	
         
         stages{
 
