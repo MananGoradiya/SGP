@@ -8,9 +8,8 @@ pipeline {
         stage('Build Maven') {
             steps {
               checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MananGoradiya/SGP']]])
-                sh 'whoami'
                 sh 'mvn --version'
-                sh 'mvn clean install'
+                sh 'mvn clean install -X'
             }
         }
     }
